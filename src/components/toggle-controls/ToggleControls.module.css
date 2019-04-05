@@ -1,0 +1,8 @@
+.main_div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 3rem .5rem 3rem;
+    border-radius: 1rem;
+}

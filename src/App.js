@@ -1,28 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import styles from './App.module.css';
+import ToggleEmoji from './components/toggle-emoji/ToggleEmoji';
+import ToggleControls from './components/toggle-controls/ToggleControls';
+import ToggleButton from './components/toggle-button/ToggleButton';
 
-class App extends Component {
-  render() {
+const App = () => {
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className={styles.App}>
+        <ToggleEmoji emoji="🙈" label="Current emoji">
+          <ToggleControls>
+            <ToggleButton icon="😻" label="Toggle emoji" />
+            <ToggleButton icon="🐱" label="Toggle emoji" />
+            <ToggleButton icon="🐵" label="Toggle emoji" />
+          </ToggleControls>
+        </ToggleEmoji>
       </div>
     );
-  }
 }
 
 export default App;

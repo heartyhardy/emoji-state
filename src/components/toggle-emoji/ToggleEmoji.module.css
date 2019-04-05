@@ -1,0 +1,28 @@
+.main_div
+{
+    background-color: #e1fad7;
+    min-height: 100vh;
+    padding:0;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.emoji
+{
+    background-color: #b0ebe7;
+    border-radius: 50%;
+    box-shadow: 0 0.1rem 1rem #9d92b0;
+    text-shadow: 0 0.2rem 1rem #ccf0d4;
+    padding: 2rem;
+    font-size: 5rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.switchboard
+{
+    margin: 2rem 1rem 1rem 1rem;
+}
