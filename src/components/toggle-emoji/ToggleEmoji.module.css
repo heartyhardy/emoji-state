@@ -12,9 +12,9 @@
 
 .emoji
 {
-    background-color: #b0ebe7;
+    background-image: radial-gradient(#b0ebe7, #a7c0d9);
     border-radius: 50%;
-    box-shadow: 0 0.1rem 1rem #9d92b0;
+    box-shadow: 0 0.1rem 2rem #a7c0d9;
     text-shadow: 0 0.2rem 1rem #ccf0d4;
     padding: 2rem;
     font-size: 5rem;
