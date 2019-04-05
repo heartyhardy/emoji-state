@@ -13,4 +13,25 @@
     border: .5rem solid #f0fae6;
     user-select: none;
     cursor: pointer;
+    transition: background-color .5s linear, text-shadow .5s linear;
+}
+
+.button_icon_on
+{
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: .5rem;
+    background-color: #998799;
+    text-shadow: 0 .1rem .5rem #9d92b0;
+    border: .5rem solid #f0fae6;
+    user-select: none;
+    cursor: pointer;
+    transition: background-color .5s linear, text-shadow .5s linear;
+}
+
+.button_icon:hover
+{
+    background-color: #a3d3e5;
+    text-shadow: 0 .1rem .5rem #9d92b0;
+    transition: background-color .5s linear, text-shadow .5s linear;
 }
