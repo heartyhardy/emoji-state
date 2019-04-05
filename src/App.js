@@ -28,16 +28,16 @@ const App = () => {
     initialState.iconsets.monkey[selectedSet.index] :
     initialState.iconsets.cat[selectedSet.index];
 
-  const animateEmoji = () => {
+  const animateEmoji = (timeout) => {
     setAnimated(true);
-    setTimeout(() => setAnimated(false), 500);
+    setTimeout(() => setAnimated(false), timeout);
   }
 
   const toggleEmoji = () => {
     let currentIndex = selectedSet.index;
     let nextIndex = currentIndex;
 
-    animateEmoji();
+    animateEmoji(500);
 
     switch (selectedSet.set) {
       case "cat":
@@ -64,9 +64,9 @@ const App = () => {
     <div className={styles.App}>
       <ToggleEmoji emoji={getCurrentEmoji()} label="Current emoji" isAnimated={animated}>
         <ToggleControls>
-          <ToggleButton icon={getCurrentEmoji()} label="Toggle emoji" click={toggleEmoji} set="" />
-          <ToggleButton icon="🐱" label="Select Cat set" click={selectSet} set="cat" currentSet={selectedSet.set} />
-          <ToggleButton icon="🐵" label="Select Monkey set" click={selectSet} set="monkey" currentSet={selectedSet.set} />
+          <ToggleButton icon={getCurrentEmoji()} label="Toggle" click={toggleEmoji} set=""/>
+          <ToggleButton icon="🐱" label="Cat" click={selectSet} set="cat" currentSet={selectedSet.set} />
+          <ToggleButton icon="🐵" label="Monkey" click={selectSet} set="monkey" currentSet={selectedSet.set} />
         </ToggleControls>
       </ToggleEmoji>
     </div>

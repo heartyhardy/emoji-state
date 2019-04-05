@@ -1,37 +1,45 @@
-.main_div
-{
+.main_div {
     background-color: #e1fad7;
     min-height: 100vh;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-@keyframes emojifade
-{
-    0% {opacity: 1;}
-    50% {opacity: .5;}
-    100% {opacity:1;}
+@keyframes emojifade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-@keyframes emojifade_rev
-{
-    0% {opacity: .5;}
-    50% {opacity: .75;}
-    100% {opacity:1;}
+@keyframes emojifade_rev {
+    0% {
+        opacity: .5;
+    }
+    50% {
+        opacity: .75;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-.emoji
-{
+.emoji {
     background-image: radial-gradient(#b0ebe7, #a7c0d9);
     border-radius: 50%;
     box-shadow: 0 0.1rem 2rem #a7c0d9;
     text-shadow: 0 0.2rem 1rem #ccf0d4;
     padding: 2rem;
-    font-size: 5rem;
+    font-size: 6rem;
     user-select: none;
     cursor: pointer;
     animation-name: emojifade_rev;
@@ -39,14 +47,13 @@
     animation-timing-function: ease-in;
 }
 
-.emoji_animated
-{
+.emoji_animated {
     background-image: radial-gradient(#b0ebe7, #a7c0d9);
     border-radius: 50%;
     box-shadow: 0 0.1rem 2rem #a7c0d9;
     text-shadow: 0 0.2rem 1rem #ccf0d4;
     padding: 2rem;
-    font-size: 5rem;
+    font-size: 6rem;
     user-select: none;
     cursor: pointer;
     animation-name: emojifade;
@@ -54,7 +61,47 @@
     animation-timing-function: ease-out;
 }
 
-.switchboard
-{
+.switchboard {
     margin: 2rem 1rem 1rem 1rem;
+}
+
+@media (max-width:600px) {
+    .main_div {
+        background-color: #e1fad7;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .emoji {
+        background-image: radial-gradient(#b0ebe7, #a7c0d9);
+        border-radius: 50%;
+        box-shadow: 0 0.1rem .5rem #a7c0d9;
+        text-shadow: 0 0.2rem .5rem #ccf0d4;
+        padding: 1rem;
+        font-size: 4rem;
+        user-select: none;
+        cursor: pointer;
+        animation-name: emojifade_rev;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+    }
+    
+    .emoji_animated {
+        background-image: radial-gradient(#b0ebe7, #a7c0d9);
+        border-radius: 50%;
+        box-shadow: 0 0.1rem .5rem #a7c0d9;
+        text-shadow: 0 0.2rem .5rem #ccf0d4;
+        padding: 1rem;
+        font-size: 4rem;
+        user-select: none;
+        cursor: pointer;
+        animation-name: emojifade;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
 }
